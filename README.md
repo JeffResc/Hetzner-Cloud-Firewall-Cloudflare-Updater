@@ -4,6 +4,7 @@ A Python script that automatically updates a Hetzner Cloud firewall to accept HT
 Installation:
 ```bash
 git clone https://github.com/JeffResc/Hetzner-Cloud-Firewall-Cloudflare-Updater
+cd Hetzner-Cloud-Firewall-Cloudflare-Updater
 python3 -m venv Hetzner-Cloud-Firewall-Cloudflare-Updater
 source Hetzner-Cloud-Firewall-Cloudflare-Updater/bin/activate
 pip3 install -r requirements.txt
