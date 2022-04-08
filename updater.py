@@ -28,7 +28,10 @@ def update_hetzner_firewall(subnets, token, firewall_id):
 
     # Sets firewall rules
     try:
-        client.firewalls.set_rules(firewall=firewall, rules=[http_rule, https_rule])
+        client.firewalls.set_rules(
+            firewall=firewall,
+            rules=[http_rule, https_rule]
+        )
         print('Firewall updated')
     except Exception as e:
         print('Error updating firewall: {}'.format(e))
@@ -57,4 +60,3 @@ if __name__ == "__main__":
 
     # Update the firewall
     update_hetzner_firewall(subnets, token, firewall_id)
-
