@@ -34,7 +34,7 @@ def update_hetzner_firewall(subnets, token, firewall_id):
         )
         print('Firewall updated')
     except Exception as e:
-        print('Error updating firewall: {}'.format(e))
+        print(f'Error updating firewall: {e}')
 
 
 def get_cloudflare_ips():
